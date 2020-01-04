@@ -1,0 +1,61 @@
+#Author Vishwesh -- 04January 2020
+
+'from turtle import * ' 
+ import time
+ import random
+
+
+name = input("Who do you love? ")
+
+def curvemove(t):
+    for i in range(50):
+        t.right(4)
+        t.forward(4)
+        
+heart = 'turtle()'
+heart.speed = 0
+heart.pensize(3)
+
+def drawheart(heart):
+  heart.color('red','pink')
+  heart.begin_fill()
+
+#heart.speed = 1
+ heart.left(140)
+ heart.forward(111.65)
+#heart.speed = 10
+ curvemove(heart)
+ heart.left(120)
+ curvemove(heart)
+ #heart.speed = 1
+ heart.forward(111.65)
+ heart.end_fill()
+ heart.done()
+ 
+drawHeart(heart)
+pen = 'turtle()'
+pen.penup()
+pen.ht()
+pen.setpos(-120, -30)
+pen.write("Happy Valentine's Day, %s!" %(name), font=("Arial", 14, "normal"))
+pen.setpos(-120, -60)
+time.sleep(.5)
+pen.write("❤ Tech Edventures", font=("Arial",14,"normal"))
+pen.setpos(60, -60)
+time.sleep(.50)
+pen.write("(& Python!)", font=("Arial",14,"normal"))
+
+numHearts = input("How much do you love Python on a scale of 1 to 10?")
+numHearts = int(numHearts)
+stamp = 'turtle()'
+stamp.speed = 0
+stamp.ht()
+stamp.penup()
+for i in range(0, numHearts):
+    x = random.randrange(-200, 200, 10)
+    y = random.randrange(-200, 200, 10)
+stamp.stepos(x, y)
+stamp.write("❤", font=("Arial",14, "normal"))
+ 
+ 
+ 
