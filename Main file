@@ -1,5 +1,7 @@
 #Author Vishwesh -- 04January 2020
 
+Note: "Using Turtle for Graphics"
+
 'from turtle import * ' 
  import time
  import random
